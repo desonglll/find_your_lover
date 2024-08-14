@@ -57,7 +57,7 @@ impl Candidate {
     }
 
     pub fn calculate_score(&self) -> f64 {
-        let weights = vec![
+        let weights = [
             0.15, // appearance
             0.20, // personality
             0.15, // financial stability
@@ -70,7 +70,7 @@ impl Candidate {
             0.05, // education
         ];
 
-        let attributes = vec![
+        let attributes = [
             self.attributes.appearance,
             self.attributes.personality,
             self.attributes.financial_stability,
